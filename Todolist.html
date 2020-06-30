@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="Todolist.css">
+	<script src="Todolist.js"></script>
+</head>
+<body>
+	<div id="todoapp">
+		<div class="container">
+			<div id="addTask" class="addTask">
+				
+				<label><b>To Do Application</b><br><br></label>
+
+				<input id="todotask" type="text" name="todotask" placeholder="Todo....." class="todotask">
+
+				<button id="add" class="addBtn" onclick="addTask()">Add</button>
+				<button id="remove" class="removeBtn" onclick="removeChecked()">Remove</button>
+
+
+			</div>
+
+			<div id="list" class="list">
+
+				<ul id="todolist" class="todolist">
+					
+					<li>
+						<input type="checkbox" class="CheckAll" onchange="strike(this,true)">
+						<label class="Title">
+							<b>Task Name</b>
+						</label>
+					</li>
+					<br>
+					
+					<li>
+						<input type="checkbox" class="task" onchange="strike(this,false)">
+						<label class="strikeThis">
+							This is a sample todo list
+						</label>
+						<button class="remove" onclick="remove(this)">x</button>
+					</li>	
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	
+</body>
+</html>
